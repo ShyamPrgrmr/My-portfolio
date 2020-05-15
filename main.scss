@@ -1,0 +1,220 @@
+$primary-color:#1A1A1D;
+$secondary-color:#4E4E50;
+$font-primary-color:#6F2232;
+$font-secondary-color:#950740;
+$font-tertiary-color:#C3073F;
+$font-white-color:rgb(247, 223, 223);
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth; 
+}
+
+body{
+    background-color: $primary-color;
+    font-family: 'Indie Flower', cursive;
+}
+.navbar{
+    height: 5rem;
+    width:100vw;
+    color: $font-secondary-color;
+    background-color: $primary-color;
+    z-index: 100;
+    padding-top: 2rem;
+    &--list{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0 1.5rem;
+        list-style: none;
+        
+        &__item{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        &__item:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+    &-fixed{
+       position: fixed;
+       top:0;
+    }
+    &--a,
+    &--a:active,
+    &--a:visited
+    {
+        text-decoration: none;
+        color: $font-secondary-color;
+        border: none;
+        font-size: 2.5rem;
+    }
+    &--a:hover{
+        color: $font-tertiary-color;
+    }
+}
+.header{
+    height:calc(100vh);
+    display: flex;
+    &--box-1{
+        flex:1;
+        height:100%;
+    }
+    &--box-2{
+        flex:0;
+    }
+    &--box{
+        height: 100%;
+        &__intro{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            &--head{
+                color: $font-white-color;
+                font-weight: 600;
+                font-size: 3rem;
+                width: 100%;
+                padding-left: 40%;
+               
+            }
+            &--text{
+                color: $font-white-color;
+                font-weight: 800;
+                font-size: 4rem;
+                width: 100%;
+                padding-left: 40%;
+            }
+            &--text-2{
+                color: $font-white-color;
+                font-weight: 400;
+                font-size: 2rem;
+                width: 100%;
+                padding-left: 40%;
+            }
+
+            &--div-btn{
+                color: $font-white-color;
+                font-weight: 400;
+                font-size: 2rem;
+                width: 100%;
+                padding-left: 40%;
+                margin-top: 1rem; 
+            }
+        }
+    }
+}
+
+#section0{
+    height:10rem;
+}
+.section{
+    height:calc(100vh - 5rem);
+    //border-bottom: 1px solid $font-white-color;
+    display: flex; 
+    flex-direction: column;
+    margin-top: 10rem;
+      
+    &--heading{
+        display: flex;
+        color: $font-white-color;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    &--desc{
+        padding: 0 1.5rem;
+        color: $font-white-color;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+    &--social{
+        margin-top:auto;
+        height: 5rem;
+        background-color: $font-tertiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &--social__icon{
+        height: 100%;
+        width:100%;
+        fill:$font-white-color;
+    }
+    &--social__icon:not(:first-child){
+        margin-left: 1rem;
+    }
+    &--a,
+    &--a:visited,
+    &--a:active{
+        color: $font-white-color;
+        text-decoration: none;
+        height:3rem;
+        width:3rem;
+        margin: 1rem;
+    }
+}
+
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding:2rem 2rem;
+    text-align: left;
+    &--hobbies{
+
+    }
+    &--skills{
+
+    }
+    &--title{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .hobby--list{
+        text-decoration: none;
+        list-style: decimal;
+    }
+}
+
+.btn,
+.btn:active,
+.btn:visited{
+    text-decoration: none;
+    color: currentColor;
+    transition: color .3s;
+}
+
+.btn:hover{
+    color: $font-tertiary-color;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    flex-direction: column;
+    &--list{
+        list-style: decimal;
+        font-size: 2.5rem;
+        color: $font-white-color;
+        & li:hover{
+            color: $font-tertiary-color;
+        }  
+    }
+}
+
+small{
+    color: $font-tertiary-color;
+}

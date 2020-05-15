@@ -1,0 +1,18 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "This is my website!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass main.scss main.css -w"
+  },
+  "keywords": [
+    "Mysite"
+  ],
+  "author": "Shyam G. Pradhan",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
